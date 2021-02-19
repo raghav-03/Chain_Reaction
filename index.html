@@ -1,0 +1,625 @@
+<html>
+    <head>
+        <title>Chain Reaction</title>
+        <link rel="stylesheet"type="text/css" href="style.css">
+        <!-- <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16"> -->
+        <!-- <meta name="viewport" content="width=device-width,intial-scale=1"> -->
+    </head>
+    <body>
+        <h1>Chain Reaction</h1>
+        <form>
+            Select Number of Players
+            <select id="mySelect">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <button type="button" onclick="myFunction()">Play</button>
+        </form>
+        <table id="box">
+            <tr>
+                <td id="cell1" onClick="clicked(this.id)">
+                    <div id="cell1a">
+                    </div>
+                    <div id="cell1b">
+                    </div>
+                    <div id="cell1c">
+                    </div>
+                </td>
+                <td id="cell2" onClick="clicked(this.id)">
+                    <div id="cell2a">
+                    </div>
+                    <div id= "cell2b">
+                    </div>
+                    <div id= "cell2c">
+                    </div>
+                </td>
+                <td id="cell3" onClick="clicked(this.id)">
+                    <div id="cell3a">
+                    </div>
+                    <div id="cell3b">
+                    </div>
+                    <div id="cell3c">
+                    </div>
+                </td>
+                <td id="cell4" onClick="clicked(this.id)">
+                    <div id="cell4a">
+                    </div>
+                    <div id="cell4b">
+                    </div>
+                    <div id="cell4c">
+                    </div>
+                </td>
+                <td id="cell5" onClick="clicked(this.id)">
+                    <div id="cell5a">
+                    </div>
+                    <div id="cell5b">
+                    </div>
+                    <div id="cell5c">
+                    </div>
+                </td>
+                <td id="cell6" onClick="clicked(this.id)">
+                    <div id="cell6a">
+                    </div>
+                    <div id="cell6b">
+                    </div>
+                    <div id="cell6c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell7" onClick="clicked(this.id)">
+                    <div id="cell7a">
+                    </div>
+                    <div id="cell7b">
+                    </div>
+                    <div id="cell7c">
+                    </div>
+                </td>
+                <td id="cell8" onClick="clicked(this.id)">
+                    <div id="cell8a">
+                    </div>
+                    <div id="cell8b">
+                    </div>
+                    <div id="cell8c">
+                    </div>
+                </td>
+                <td id="cell9" onClick="clicked(this.id)">
+                    <div id="cell9a">
+                    </div>
+                    <div id="cell9b">
+                    </div>
+                    <div id="cell9c">
+                    </div>
+                </td>
+                <td id="cell10" onClick="clicked(this.id)">
+                    <div id="cell10a">
+                    </div>
+                    <div id="cell10b">
+                    </div>
+                    <div id="cell10c">
+                    </div>
+                </td>
+                <td id="cell11" onClick="clicked(this.id)">
+                    <div id="cell11a">
+                    </div>
+                    <div id="cell11b">
+                    </div>
+                    <div id="cell11c">
+                    </div>
+                </td>
+                <td id="cell12" onClick="clicked(this.id)">
+                    <div id="cell12a">
+                    </div>
+                    <div id="cell12b">
+                    </div>
+                    <div id="cell12c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell13" onClick="clicked(this.id)">
+                    <div id="cell13a">
+                    </div>
+                    <div id="cell13b">
+                    </div>
+                    <div id="cell13c">
+                    </div>
+                </td>
+                <td id="cell14" onClick="clicked(this.id)">
+                    <div id="cell14a">
+                    </div>
+                    <div id="cell14b">
+                    </div>
+                    <div id="cell14c">
+                    </div>
+                </td>
+                <td id="cell15" onClick="clicked(this.id)">
+                    <div id="cell15a">
+                    </div>
+                    <div id= "cell15b">
+                    </div>
+                    <div id= "cell15c">
+                    </div>
+                </td>
+                <td id="cell16" onClick="clicked(this.id)">
+                    <div id="cell16a">
+                    </div>
+                    <div id="cell16b">
+                    </div>
+                    <div id="cell16c">
+                    </div>
+                </td>
+                <td id="cell17" onClick="clicked(this.id)">
+                    <div id="cell17a">
+                    </div>
+                    <div id="cell17b">
+                    </div>
+                    <div id="cell17c">
+                    </div>
+                </td>
+                <td id="cell18" onClick="clicked(this.id)">
+                    <div id="cell18a">
+                    </div>
+                    <div id="cell18b">
+                    </div>
+                    <div id="cell18c">
+                    </div>
+                </td>    
+            </tr>
+            <tr>
+                <td id="cell19" onClick="clicked(this.id)">
+                    <div id="cell19a">
+                    </div>
+                    <div id="cell19b">
+                    </div>
+                    <div id="cell19c">
+                    </div>
+                </td>
+                <td id="cell20" onClick="clicked(this.id)">
+                    <div id="cell20a">
+                    </div>
+                    <div id= "cell20b">
+                    </div>
+                    <div id= "cell20c">
+                    </div>
+                </td>
+                <td id="cell21" onClick="clicked(this.id)">
+                    <div id="cell21a">
+                    </div>
+                    <div id="cell21b">
+                    </div>
+                    <div id="cell21c">
+                    </div>
+                </td>
+                <td id="cell22" onClick="clicked(this.id)">
+                    <div id="cell22a">
+                    </div>
+                    <div id="cell22b">
+                    </div>
+                    <div id="cell22c">
+                    </div>
+                </td>
+                <td id="cell23" onClick="clicked(this.id)">
+                    <div id="cell23a">
+                    </div>
+                    <div id="cell23b">
+                    </div>
+                    <div id="cell23c">
+                    </div>
+                </td>
+                <td id="cell24" onClick="clicked(this.id)">
+                    <div id="cell24a">
+                    </div>
+                    <div id="cell24b">
+                    </div>
+                    <div id="cell24c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell25" onClick="clicked(this.id)">
+                    <div id="cell25a">
+                    </div>
+                    <div id="cell25b">
+                    </div>
+                    <div id="cell25c">
+                    </div>
+                </td>
+                <td id="cell26" onClick="clicked(this.id)">
+                    <div id="cell26a">
+                    </div>
+                    <div id= "cell26b">
+                    </div>
+                    <div id= "cell26c">
+                    </div>
+                </td>
+                <td id="cell27" onClick="clicked(this.id)">
+                    <div id="cell27a">
+                    </div>
+                    <div id="cell27b">
+                    </div>
+                    <div id="cell27c">
+                    </div>
+                </td>
+                <td id="cell28" onClick="clicked(this.id)">
+                    <div id="cell28a">
+                    </div>
+                    <div id="cell28b">
+                    </div>
+                    <div id="cell28c">
+                    </div>
+                </td>
+                <td id="cell29" onClick="clicked(this.id)">
+                    <div id="cell29a">
+                    </div>
+                    <div id="cell29b">
+                    </div>
+                    <div id="cell29c">
+                    </div>
+                </td>
+                <td id="cell30" onClick="clicked(this.id)">
+                    <div id="cell30a">
+                    </div>
+                    <div id="cell30b">
+                    </div>
+                    <div id="cell30c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell31" onClick="clicked(this.id)">
+                    <div id="cell31a">
+                    </div>
+                    <div id="cell31b">
+                    </div>
+                    <div id="cell31c">
+                    </div>
+                </td>
+                <td id="cell32" onClick="clicked(this.id)">
+                    <div id="cell32a">
+                    </div>
+                    <div id= "cell32b">
+                    </div>
+                    <div id= "cell32c">
+                    </div>
+                </td>
+                <td id="cell33" onClick="clicked(this.id)">
+                    <div id="cell33a">
+                    </div>
+                    <div id="cell33b">
+                    </div>
+                    <div id="cell33c">
+                    </div>
+                </td>
+                <td id="cell34" onClick="clicked(this.id)">
+                    <div id="cell34a">
+                    </div>
+                    <div id="cell34b">
+                    </div>
+                    <div id="cell34c">
+                    </div>
+                </td>
+                <td id="cell35" onClick="clicked(this.id)">
+                    <div id="cell35a">
+                    </div>
+                    <div id="cell35b">
+                    </div>
+                    <div id="cell35c">
+                    </div>
+                </td>
+                <td id="cell36" onClick="clicked(this.id)">
+                    <div id="cell36a">
+                    </div>
+                    <div id="cell36b">
+                    </div>
+                    <div id="cell36c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell37" onClick="clicked(this.id)">
+                    <div id="cell37a">
+                    </div>
+                    <div id="cell37b">
+                    </div>
+                    <div id="cell37c">
+                    </div>
+                </td>
+                <td id="cell38" onClick="clicked(this.id)">
+                    <div id="cell38a">
+                    </div>
+                    <div id= "cell38b">
+                    </div>
+                    <div id= "cell38c">
+                    </div>
+                </td>
+                <td id="cell39" onClick="clicked(this.id)">
+                    <div id="cell39a">
+                    </div>
+                    <div id="cell39b">
+                    </div>
+                    <div id="cell39c">
+                    </div>
+                </td>
+                <td id="cell40" onClick="clicked(this.id)">
+                    <div id="cell40a">
+                    </div>
+                    <div id="cell40b">
+                    </div>
+                    <div id="cell40c">
+                    </div>
+                </td>
+                <td id="cell41" onClick="clicked(this.id)">
+                    <div id="cell41a">
+                    </div>
+                    <div id="cell41b">
+                    </div>
+                    <div id="cell41c">
+                    </div>
+                </td>
+                <td id="cell42" onClick="clicked(this.id)">
+                    <div id="cell42a">
+                    </div>
+                    <div id="cell42b">
+                    </div>
+                    <div id="cell42c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell43" onClick="clicked(this.id)">
+                    <div id="cell43a">
+                    </div>
+                    <div id="cell43b">
+                    </div>
+                    <div id="cell43c">
+                    </div>
+                </td>
+                <td id="cell44" onClick="clicked(this.id)">
+                    <div id="cell44a">
+                    </div>
+                    <div id= "cell44b">
+                    </div>
+                    <div id= "cell44c">
+                    </div>
+                </td>
+                <td id="cell45" onClick="clicked(this.id)">
+                    <div id="cell45a">
+                    </div>
+                    <div id="cell45b">
+                    </div>
+                    <div id="cell45c">
+                    </div>
+                </td>
+                <td id="cell46" onClick="clicked(this.id)">
+                    <div id="cell46a">
+                    </div>
+                    <div id="cell46b">
+                    </div>
+                    <div id="cell46c">
+                    </div>
+                </td>
+                <td id="cell47" onClick="clicked(this.id)">
+                    <div id="cell47a">
+                    </div>
+                    <div id="cell47b">
+                    </div>
+                    <div id="cell47c">
+                    </div>
+                </td>
+                <td id="cell48" onClick="clicked(this.id)">
+                    <div id="cell48a">
+                    </div>
+                    <div id="cell48b">
+                    </div>
+                    <div id="cell48c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell49" onClick="clicked(this.id)">
+                    <div id="cell49a">
+                    </div>
+                    <div id="cell49b">
+                    </div>
+                    <div id="cell49c">
+                    </div>
+                </td>
+                <td id="cell50" onClick="clicked(this.id)">
+                    <div id="cell50a">
+                    </div>
+                    <div id= "cell50b">
+                    </div>
+                    <div id= "cell50c">
+                    </div>
+                </td>
+                <td id="cell51" onClick="clicked(this.id)">
+                    <div id="cell51a">
+                    </div>
+                    <div id="cell51b">
+                    </div>
+                    <div id="cell51c">
+                    </div>
+                </td>
+                <td id="cell52" onClick="clicked(this.id)">
+                    <div id="cell52a">
+                    </div>
+                    <div id="cell52b">
+                    </div>
+                    <div id="cell52c">
+                    </div>
+                </td>
+                <td id="cell53" onClick="clicked(this.id)">
+                    <div id="cell53a">
+                    </div>
+                    <div id="cell53b">
+                    </div>
+                    <div id="cell53c">
+                    </div>
+                </td>
+                <td id="cell54" onClick="clicked(this.id)">
+                    <div id="cell54a">
+                    </div>
+                    <div id="cell54b">
+                    </div>
+                    <div id="cell54c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell55" onClick="clicked(this.id)">
+                    <div id="cell55a">
+                    </div>
+                    <div id="cell55b">
+                    </div>
+                    <div id="cell55c">
+                    </div>
+                </td>
+                <td id="cell56" onClick="clicked(this.id)">
+                    <div id="cell56a">
+                    </div>
+                    <div id= "cell56b">
+                    </div>
+                    <div id= "cell56c">
+                    </div>
+                </td>
+                <td id="cell57" onClick="clicked(this.id)">
+                    <div id="cell57a">
+                    </div>
+                    <div id="cell57b">
+                    </div>
+                    <div id="cell57c">
+                    </div>
+                </td>
+                <td id="cell58" onClick="clicked(this.id)">
+                    <div id="cell58a">
+                    </div>
+                    <div id="cell58b">
+                    </div>
+                    <div id="cell58c">
+                    </div>
+                </td>
+                <td id="cell59" onClick="clicked(this.id)">
+                    <div id="cell59a">
+                    </div>
+                    <div id="cell59b">
+                    </div>
+                    <div id="cell59c">
+                    </div>
+                </td>
+                <td id="cell60" onClick="clicked(this.id)">
+                    <div id="cell60a">
+                    </div>
+                    <div id="cell60b">
+                    </div>
+                    <div id="cell60c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell61" onClick="clicked(this.id)">
+                    <div id="cell61a">
+                    </div>
+                    <div id="cell61b">
+                    </div>
+                    <div id="cell61c">
+                    </div>
+                </td>
+                <td id="cell62" onClick="clicked(this.id)">
+                    <div id="cell62a">
+                    </div>
+                    <div id= "cell62b">
+                    </div>
+                    <div id= "cell62c">
+                    </div>
+                </td>
+                <td id="cell63" onClick="clicked(this.id)">
+                    <div id="cell63a">
+                    </div>
+                    <div id="cell63b">
+                    </div>
+                    <div id="cell63c">
+                    </div>
+                </td>
+                <td id="cell64" onClick="clicked(this.id)">
+                    <div id="cell64a">
+                    </div>
+                    <div id="cell64b">
+                    </div>
+                    <div id="cell64c">
+                    </div>
+                </td>
+                <td id="cell65" onClick="clicked(this.id)">
+                    <div id="cell65a">
+                    </div>
+                    <div id="cell65b">
+                    </div>
+                    <div id="cell65c">
+                    </div>
+                </td>
+                <td id="cell66" onClick="clicked(this.id)">
+                    <div id="cell66a">
+                    </div>
+                    <div id="cell66b">
+                    </div>
+                    <div id="cell66c">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="cell67" onClick="clicked(this.id)">
+                    <div id="cell67a">
+                    </div>
+                    <div id="cell67b">
+                    </div>
+                    <div id="cell67c">
+                    </div>
+                </td>
+                <td id="cell68" onClick="clicked(this.id)">
+                    <div id="cell68a">
+                    </div>
+                    <div id= "cell68b">
+                    </div>
+                    <div id= "cell68c">
+                    </div>
+                </td>
+                <td id="cell69" onClick="clicked(this.id)">
+                    <div id="cell69a">
+                    </div>
+                    <div id="cell69b">
+                    </div>
+                    <div id="cell69c">
+                    </div>
+                </td>
+                <td id="cell70" onClick="clicked(this.id)">
+                    <div id="cell70a">
+                    </div>
+                    <div id="cell70b">
+                    </div>
+                    <div id="cell70c">
+                    </div>
+                </td>
+                <td id="cell71" onClick="clicked(this.id)">
+                    <div id="cell71a">
+                    </div>
+                    <div id="cell71b">
+                    </div>
+                    <div id="cell71c">
+                    </div>
+                </td>
+                <td id="cell72" onClick="clicked(this.id)">
+                    <div id="cell72a">
+                    </div>
+                    <div id="cell72b">
+                    </div>
+                    <div id="cell72c">
+                    </div>
+                </td>
+            </tr>
+          </table>
+        <script src="script.js"></script>
+    </body>
+</html>

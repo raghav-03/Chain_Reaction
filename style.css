@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+table, td {
+    border: 1.3px solid black;
+}
+table {
+    table-layout: fixed;
+}
+h1{
+    color: white;
+}
+form{
+    color: white;
+}
+table{
+    margin-left: 30%;
+    width: 22%;
+    height: 70%;
+}
+.a{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 45%;
+    height: 45%;
+    margin-left: 20%;
+}
+.b{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 45%;
+    height: 45%;
+    margin-top: -25%;
+    margin-left: 40%;
+}
+.c{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 45%;
+    height: 45%;
+    margin-top: -25%;
+    margin-left: 20%;
+}
