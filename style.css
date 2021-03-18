@@ -60,9 +60,6 @@ table{
 
 /* Horizontal Media Query */
 @media only screen and (max-width: 1140px) {
-    /* body{
-        background-color: blue;
-    } */
     table{
         margin-left: 28%;
         margin-top: 1%;
@@ -109,9 +106,6 @@ table{
     }
 }
 @media only screen and (max-width: 910px) {
-    /* body{
-        background-color: blue;
-    } */
     table{
         margin-left: 25%;
         margin-top: 1%;
@@ -135,8 +129,6 @@ table{
 }
 @media only screen and (max-width: 740px) {
     .c{
-        /* width: 35%; */
-        /* height: 50%; */
         margin-top: -15%;
     }
 }
@@ -160,9 +152,6 @@ table{
     }
 }
 @media only screen and (max-width: 560px) {
-    /* body{
-        background-color: blue;
-    } */
     table{
         margin-left: 3%;
         margin-top: 3%;
@@ -220,9 +209,6 @@ table{
     }
 }
 @media only screen and (max-height: 440px) {
-    /* body{
-        background-color: blue;
-    } */
     .c{
         margin-top: -12%;
     }
@@ -245,9 +231,6 @@ table{
     }
 }
 @media only screen and (max-height: 290px) {
-    /* body{
-        background-color: blue;
-    } */
     table{
         height: 180%;
     }
