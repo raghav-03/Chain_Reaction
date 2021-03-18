@@ -8,7 +8,7 @@ var size=0;
 var max=[];
 var flag=0;
 var won=false;
-function myFunction() {
+function myFunction(){
     won=false;
     turn=0;
     flag=0;
@@ -56,7 +56,7 @@ function clicked(id){
                 flag=1;
                 turn=0;
             }
-            if(eliminated[turn]==true){
+            while(eliminated[turn]==true){
                 turn++;
             }
             if(turn==size){
@@ -68,6 +68,9 @@ function clicked(id){
                alert("Player "+temp+" Won!!");
                won=true;
             }
+            if(max[matches[0]]==count[matches[0]]){
+                ele.style.animation = "move 3s infinite";
+            }
             var ele=document.getElementById("box");
             ele.style.borderColor=colors[turn];
             for(var i=1;i<=72;i++){
@@ -76,14 +79,17 @@ function clicked(id){
         }else{
             if(data[matches[0]]==colors[turn]){
                 if(max[matches[0]]===count[matches[0]]){
-                    count[matches[0]]=0;
-                    data[matches[0]]="";
                     var ele=document.getElementById(id+"a");
+                    ele.style.animation = "";
                     ele.classList.remove('a');
                     var ele=document.getElementById(id+"b");
+                    ele.style.animation = "";
                     ele.classList.remove('b');
                     var ele=document.getElementById(id+"c");
+                    ele.style.animation = "";
                     ele.classList.remove('c');
+                    count[matches[0]]=0;
+                    data[matches[0]]="";     
                     if(max[matches[0]]==1){
                         if(matches[0]==1){
                             var temp=parseInt(matches[0]);
@@ -92,7 +98,7 @@ function clicked(id){
                             recursive("cell"+cell);
                             // next row
                             cell=temp+6;
-                            recursive("cell"+cell);
+                            recursive("cell"+cell);                           
                         }else if(matches[0]==6){
                             var temp=parseInt(matches[0]);
                             // prev col
@@ -192,14 +198,34 @@ function clicked(id){
                         ele.classList.add('c');
                         ele.style.backgroundColor=colors[turn];
                     }
+                    if(max[matches[0]]==count[matches[0]]){
+                        if(count[matches[0]]==1){
+                            var ele=document.getElementById(id+"a");
+                            ele.style.animation = "move 3s infinite";
+                        }else if(count[matches[0]]==2){
+                            var ele=document.getElementById(id+"a");
+                            ele.style.animation = "move 3s infinite";
+                            var ele=document.getElementById(id+"b");
+                            ele.style.animation = "move 3s infinite";
+                        }else{
+                            var ele=document.getElementById(id+"a");
+                            ele.style.animation = "move 3s infinite";
+                            var ele=document.getElementById(id+"b");
+                            ele.style.animation = "move 3s infinite";
+                            var ele=document.getElementById(id+"c");
+                            ele.style.animation = "move 3s infinite";
+                        }
+                    }
                 }
                 var last=turn;
                 turn++;
                 setTimeout(function(){
+                    console.log("hello");
+                    console.log(turn);
                     if(turn==size){
                         turn=0;
                     }
-                    if(eliminated[turn]==true){
+                    while(eliminated[turn]==true){
                         turn++;
                     }
                     if(turn==size){
@@ -231,9 +257,18 @@ function recursive(id){
         count[matches[0]]=1;
         var ele=document.getElementById(id+"a");
         ele.classList.add('a');
+        if(max[matches[0]]==count[matches[0]]){
+            ele.style.animation = "move 3s infinite";
+        }
         ele.style.backgroundColor=colors[turn];
     }else{
         if(max[matches[0]]===count[matches[0]]){
+            var ele=document.getElementById(id+"a");
+            ele.style.animation = "";
+            var ele=document.getElementById(id+"b");
+            ele.style.animation = "";
+            var ele=document.getElementById(id+"c");
+            ele.style.animation = "";
             count[matches[0]]=0;
             data[matches[0]]="";
             var ele=document.getElementById(id+"a");
@@ -352,6 +387,24 @@ function recursive(id){
                 var ele=document.getElementById(id+"c");
                 ele.classList.add('c');
                 ele.style.backgroundColor=colors[turn];
+            }
+            if(max[matches[0]]==count[matches[0]]){
+                if(count[matches[0]]==1){
+                    var ele=document.getElementById(id+"a");
+                    ele.style.animation = "move 3s infinite";
+                }else if(count[matches[0]]==2){
+                    var ele=document.getElementById(id+"a");
+                    ele.style.animation = "move 3s infinite";
+                    var ele=document.getElementById(id+"b");
+                    ele.style.animation = "move 3s infinite";
+                }else{
+                    var ele=document.getElementById(id+"a");
+                    ele.style.animation = "move 3s infinite";
+                    var ele=document.getElementById(id+"b");
+                    ele.style.animation = "move 3s infinite";
+                    var ele=document.getElementById(id+"c");
+                    ele.style.animation = "move 3s infinite";
+                }
             }
          }
         myFunction();

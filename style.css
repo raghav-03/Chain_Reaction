@@ -15,23 +15,27 @@ form{
 }
 table{
     margin-left: 30%;
-    width: 22%;
-    height: 70%;
+    width: 30%;
+    height: 75%;
+    margin-bottom: 10%;
+}
+#instruction{
+    color: white;
 }
 .a{
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
-    width: 45%;
-    height: 45%;
+    width: 40%;
+    height: 40%;
     margin-left: 20%;
 }
 .b{
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
-    width: 45%;
-    height: 45%;
+    width: 40%;
+    height: 40%;
     margin-top: -25%;
     margin-left: 40%;
 }
@@ -39,8 +43,225 @@ table{
     background-color: white;
     border: 1px solid black;
     border-radius: 50%;
-    width: 45%;
-    height: 45%;
-    margin-top: -25%;
+    width: 40%;
+    height: 40%;
+    margin-top: -17%;
     margin-left: 20%;
+}
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Media Query */
+
+/* Horizontal Media Query */
+@media only screen and (max-width: 1140px) {
+    /* body{
+        background-color: blue;
+    } */
+    table{
+        margin-left: 28%;
+        margin-top: 1%;
+        width: 35%;
+        height: 73%;
+    }
+    .a{
+        width: 40%;
+        height: 40%;
+    }
+    .b{
+        width: 40%;
+        height: 40%;
+        margin-left: 35%;
+    }
+    .c{
+        width: 40%;
+        height: 40%;
+        margin-top: -12%;
+    }
+}
+@media only screen and (max-width: 1010px) {
+    /* body{
+        background-color: blue;
+    } */
+    table{
+        margin-left: 28%;
+        margin-top: 1%;
+        width: 40%;
+        height: 72%;
+    }
+    .a{
+        width: 35%;
+        height: 40%;
+    }
+    .b{
+        width: 35%;
+        height: 40%;
+    }
+    .c{
+        width: 35%;
+        height: 40%;
+        margin-top: -10%;
+    }
+}
+@media only screen and (max-width: 910px) {
+    /* body{
+        background-color: blue;
+    } */
+    table{
+        margin-left: 25%;
+        margin-top: 1%;
+        width: 45%;
+        height: 73%;
+    }
+    .a{
+        width: 35%;
+        height: 40%;
+    }
+    .b{
+        width: 35%;
+        height: 40%;
+        margin-top: -20%;
+    }
+    .c{
+        width: 35%;
+        height: 40%;
+        margin-top: -15%;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .c{
+        /* width: 35%; */
+        /* height: 50%; */
+        margin-top: -15%;
+    }
+}
+@media only screen and (max-width: 730px) {
+    table{
+        height: 85%;
+        width: 55%;
+    }
+    .c{
+        margin-top: -20%;
+    }
+}
+@media only screen and (max-width: 620px) {
+    table{
+        height: 85%;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .c{
+        margin-top: -25%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    /* body{
+        background-color: blue;
+    } */
+    table{
+        margin-left: 3%;
+        margin-top: 3%;
+        width: 90%;
+        height: 90%;
+    }
+    .a{
+        width: 35%;
+        height: 35%;
+    }
+    .b{
+        width: 35%;
+        height: 35%;
+    }
+    .c{
+        width: 35%;
+        height: 35%;
+        margin-top: -15%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    table{
+        width: 90%;
+        margin-left: 4%;
+        height: 70%;
+    }
+    .c{
+        width: 35%;
+        height: 35%;
+        margin-top: -20%;
+    }
+}
+
+/* vertical media query */
+@media only screen and (max-height: 580px) {
+    .c{
+        margin-top: -12%;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-height: 540px) {
+    table{
+        height: 90%;
+    }
+    .c{
+        margin-top: -15%;
+    }
+}
+@media only screen and (max-height: 450px) {
+    table{
+        height: 100%;
+    }
+    .c{
+        margin-top: -15%;
+    }
+}
+@media only screen and (max-height: 440px) {
+    /* body{
+        background-color: blue;
+    } */
+    .c{
+        margin-top: -12%;
+    }
+}
+@media only screen and (max-height: 400px) {
+    table{
+        height: 110%;
+    }
+    .c{
+        margin-top: -12%;
+    }
+}
+@media only screen and (max-height: 360px) {
+    table{
+        height: 120%;
+    }
+    .c{
+        margin-top: -10%;
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-height: 290px) {
+    /* body{
+        background-color: blue;
+    } */
+    table{
+        height: 180%;
+    }
+    .c{
+        margin-top: -15%;
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-height: 220px) {
+    table{
+        height: 200%;
+    }
+    .c{
+        margin-top: -15%;
+        margin-left: 27%;
+    }
 }
