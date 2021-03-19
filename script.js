@@ -23,9 +23,15 @@ function myFunction(){
     for(var i=1;i<=72;i++){
         max[i]=3;
         document.getElementById("cell"+i).style.borderColor=colors[0];
-        document.getElementById("cell"+i+"a").classList.remove('a');
-        document.getElementById("cell"+i+"b").classList.remove('b');
-        document.getElementById("cell"+i+"c").classList.remove('c');
+        var ele=document.getElementById("cell"+i+"a");
+        ele.style.animation = "";
+        ele.classList.remove('a');
+        var ele=document.getElementById("cell"+i+"b");
+        ele.style.animation = "";
+        ele.classList.remove('b');
+        var ele=document.getElementById("cell"+i+"c");
+        ele.style.animation = "";
+        ele.classList.remove('c');
         count[i]=0;
         data[i]="";
     }
