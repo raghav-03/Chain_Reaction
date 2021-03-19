@@ -6,4 +6,4 @@ The Objective of the Game Chain Reaction is to take control of the board by elim
 
 Players takes it in turns to place their orbs in a cell.
 
-https://chain-reaction-raghav-agarwal.web.app/
+https://chain-reaction-game-raghav.web.app/
